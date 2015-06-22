@@ -1,0 +1,32 @@
+version: "1.BUILD_NUMBER"
+schemaVersion: v1
+app_id: SampleApp
+tiers:
+  - name: db
+    type: db
+    expose: True
+    replicas: 1
+    containers:
+    - name: mysql
+      image: mysql/mysql-server
+      environment:
+        - MYSQL_ROOT_USER: root
+          MYSQL_ROOT_PASSWORD: admin
+      ports:
+        - containerPort: 3306
+      volumes:
+        - containerVolume: "/var/lib/mysql"
+          min-size: 1G
+  - name: app
+    type: app
+    expose : false
+    replicas: 1
+    containers:
+    - name: app
+      image: anilkumar7/testapp:latest
+      environment:
+        - MYSQL_USER: root
+          MYSQL_PASSWORD: admin
+      ports:
+        - hostPort: 8080
+          containerPort: 80
