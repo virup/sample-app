@@ -35,6 +35,13 @@ $themes = array(
   "united"
 );
 
+// Change the theme by change the index here.
+// 0 - blue menubar, white background color
+// 1 - black menubar, white background color
+// 2 - full black (black background, grey foreground)
+// 3 - dark blue menubar, dark grey background, green text.
+// 4 - dark blue menubar, white background, dark blue text.
+// 5 - orange menubar, white background
 $theme = $themes[2];
 
 //var_dump($db_config);
