@@ -35,7 +35,7 @@ $themes = array(
   "united"
 );
 
-$theme = $themes[0];
+$theme = $themes[1];
 
 //var_dump($db_config);
 //var_dump($_ENV);
