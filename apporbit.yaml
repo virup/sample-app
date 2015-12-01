@@ -8,7 +8,7 @@ tiers:
     replicas: 1
     containers:
     - name: mysql
-      image: mysql/mysql-server
+      image: mysql/mysql-server:5.6.27
       environment:
         - MYSQL_ROOT_USER: root
           MYSQL_ROOT_PASSWORD: admin
@@ -23,7 +23,7 @@ tiers:
     replicas: 1
     containers:
     - name: app
-      image: geminiadmin/sampleapp:latest
+      image: aodemo/sample-app:bBUILD_NUMBER
       environment:
         - MYSQL_USER: root
           MYSQL_PASSWORD: admin

@@ -24,5 +24,18 @@ $db_config = array(
   'db_name' => 'sample-app',
 );
 
+global $theme;
+
+$themes = array(
+  "cerulean",
+  "cosmos",
+  "cyborg",
+  "darkly",
+  "flatly",
+  "united"
+);
+
+$theme = $themes[0];
+
 //var_dump($db_config);
 //var_dump($_ENV);

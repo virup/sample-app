@@ -7,45 +7,78 @@ db_init();
 $samples = get_rows('samples');
 
 ?>
-
-<html>
+<html lang="en">
 <head>
-<title>Sample App!</title>
+  <title>Sample App!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <link href="css/themes/<?php echo $theme ?>.css" rel="stylesheet" >
 </head>
 <body>
-<h1>Welcome to Sample App!</h1>
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">Sample App!!!</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Build</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<form action="/cgi/run.php" method="post">
-<div>To create random samples, specify sample size below and click on Run!</div>
-<div>
-<label>Sample Size:</label>
-<input type="text" size="20" name="size"/>
-</div>
+  <div class="container">
+    <div class="page-header">
+        <h1>Sample App!</h1>
+        <p class="lead">The app validates the database connectivity and appliation state.</p>
+    </div>
 
-<div>
-<input type="submit" value="Run"/>
-</div>
-</form>
+    <h3>Sample Data</h3>
+    <p>To create random samples, specify sample size and click on Run!</p>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="/cgi/run.php" method="post" class="form-inline">
+            <label for="size">Sample Size:</label>
+            <input id="size" class="form-control" type="text" size="20" name="size" required="" />
+            <input type="submit" value="Run" class="form-control btn btn-primary"/>
+          </form>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
 
-<br/>
-<div>Total samples (so far): <b><?php print count($samples); ?></b></div>
-<br/>
-<div style="overflow-y: auto;height: 400px;">
-<table border="1">
-<tr>
-<th>ID</th>
-<th>Value</th>
-<th>Created At</th>
-</tr>
-<?php foreach ($samples as $sample): ?>
-<tr>
-<td><?php print $sample['id']; ?></td>
-<td><?php print $sample['value']; ?></td>
-<td><?php print $sample['created_at']; ?></td>
-</tr>
-<?php endforeach; ?>
-</table>
-</div>
 
+      <table class="table table-hover">
+        <caption>Total samples (so far): <b><?php print count($samples); ?></b></caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Value</th>
+            <th>Created At</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach ($samples as $sample): ?>
+            <tr>
+              <td><?php print $sample['id']; ?></td>
+              <td><?php print $sample['value']; ?></td>
+              <td><?php print $sample['created_at']; ?></td>
+            </tr>
+          <?php endforeach; ?>
+        <tbody>
+      </table>
+  </div>
 </body>
 </html>
