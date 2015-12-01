@@ -34,7 +34,7 @@ $samples = get_rows('samples');
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Build</a></li>
+          <li><a href="#">Build <?php include "info.txt" ?></a></li>
         </ul>
       </div>
     </div>
