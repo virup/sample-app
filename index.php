@@ -43,7 +43,7 @@ $samples = get_rows('samples');
   <div class="container">
     <div class="page-header">
         <h1>Sample App!</h1>
-        <p class="lead">The app validates the database connectivity and appliation state.</p>
+        <p class="lead">The app validates the database connectivity and application state.</p>
     </div>
 
     <h3>Sample Data</h3>
