@@ -1,4 +1,4 @@
-version: "1.BUILD_NUMBER"
+version: "1.0.BUILD_NUMBER"
 schemaVersion: v1
 app_id: DataGenerator
 tiers:
