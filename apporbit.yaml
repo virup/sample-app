@@ -1,6 +1,6 @@
 version: "1.BUILD_NUMBER"
 schemaVersion: v1
-app_id: SampleApp
+app_id: DataGenerator
 tiers:
   - name: db
     type: db
@@ -23,7 +23,7 @@ tiers:
     replicas: 1
     containers:
     - name: app
-      image: aodemo/sample-app:bBUILD_NUMBER
+      image: aodemo/data-generator:bBUILD_NUMBER
       environment:
         - MYSQL_USER: root
           MYSQL_PASSWORD: admin
