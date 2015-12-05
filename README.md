@@ -1,4 +1,4 @@
-Sample App for Demo
+Data Generator App for Demo
 ===================
 
 appOrbit - Demo application to show the continuos integration and delivery
