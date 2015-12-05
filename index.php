@@ -9,7 +9,7 @@ $samples = get_rows('samples');
 ?>
 <html lang="en">
 <head>
-  <title>Sample App!</title>
+  <title>Data Generator App!</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@ $samples = get_rows('samples');
   <div class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <a href="/" class="navbar-brand">Sample App!!!</a>
+        <a href="/" class="navbar-brand">Data Generator App!!!</a>
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -43,7 +43,7 @@ $samples = get_rows('samples');
   <div class="container">
     <div class="page-header">
         <h1>Sample App!</h1>
-        <p class="lead">UST Sample App Demo for DevOps</p>
+        <p class="lead">Data Generator App Demo for DevOps</p>
     </div>
 
     <h3>Sample Data</h3>
