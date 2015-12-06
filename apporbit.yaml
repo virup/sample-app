@@ -23,7 +23,7 @@ tiers:
     replicas: 1
     containers:
     - name: app
-      image: aodemo/data-generator:bBUILD_NUMBER
+      image: aodemo/data-generator:TAG
       environment:
         - MYSQL_USER: root
           MYSQL_PASSWORD: admin
