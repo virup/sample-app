@@ -22,8 +22,8 @@ $db_config = array(
   'username' => $username,
   'password' => $password,
   'db_name' => 'sample-app',
-);
 
+);
 global $theme;
 
 $themes = array(
@@ -42,7 +42,7 @@ $themes = array(
 // 3 - dark blue menubar, dark grey background, green text.
 // 4 - dark blue menubar, white background, dark blue text.
 // 5 - orange menubar, white background
-$theme = $themes[5];
+$theme = $themes[2];
 
 //var_dump($db_config);
 //var_dump($_ENV);
