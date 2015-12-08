@@ -28,5 +28,5 @@ tiers:
         - MYSQL_USER: root
           MYSQL_PASSWORD: admin
       ports:
-        - hostPort: 8080
-          containerPort: 80
+        - containerPort: 80
+          service: external
