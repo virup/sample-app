@@ -1,8 +1,8 @@
-FROM centos:centos6
+FROM gopalgemini/ao-demo
 MAINTAINER The Gemini Platform Project <venkat@gemini-systems.net> - venkat
 
 # install dependencies
-RUN yum install -y httpd php php-mysql mysql
+#RUN yum install -y httpd php php-mysql mysql
 
 # copy sample-app to web dir
 RUN mkdir -p /home/gemini/sample-app/
