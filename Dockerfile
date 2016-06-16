@@ -1,4 +1,6 @@
-FROM gopalgemini/ao-demo
+FROM aodemo/baseimage
+#public docker hub image
+#FROM gopalgemini/ao-demo
 MAINTAINER The Gemini Platform Project <venkat@gemini-systems.net> - venkat
 
 # install dependencies
