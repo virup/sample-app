@@ -1,5 +1,5 @@
-FROM gopalgemini/ao-demo
-#FROM aodemo/baseimage
+FROM aodemo/baseimage
+#FROM gopalgemini/ao-demo
 #public docker hub image
 
 MAINTAINER The Gemini Platform Project <venkat@gemini-systems.net> - venkat
