@@ -42,7 +42,7 @@ $themes = array(
 // 3 - dark blue menubar, dark grey background, green text.
 // 4 - dark blue menubar, white background, dark blue text.
 // 5 - orange menubar, white background
-$theme = $themes[4];
+$theme = $themes[5];
 
 //var_dump($db_config);
 //var_dump($_ENV);
