@@ -9,7 +9,7 @@ Simple PHP app has a db connection and helps to make new db records and prints t
 ## Demo steps
 To test the continuos integration, try the following changes.
 
-edit config.php
+edit cgi/config.php
 ```
 $theme = $themes[0]
 ```
